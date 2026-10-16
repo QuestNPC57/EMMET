@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,40 +20,98 @@
             gap: 20px;
         }
 
-        .pfp {
+        .pfp img {
             width: 150px;
             height: 150px;
-            object-fit: cover;
-
+            object-fit: contain; 
+            border-radius: 10%;
         }
     </style>
 </head>
 
-<body>
-    <h1>My Portfolio</h1>
-    <nav class="navigation">
+<body id="home">
 
-        <a href="index.html">Home</a> |
+    <h1>My Portfolio</h1>
+
+    <nav class="navigation">
+        <a href="#home">Home</a> |
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
         <a href="#projects">Projects</a> |
         <a href="#contact">Contact</a>
-        <hr>
     </nav>
+
+    <hr>
+
     <div class="container">
+
         <header class="header">
             <div class="header-text">
                 <h1>Liam Daniel G. Cerna</h1>
-                <p>A second-year Bachelor of Science in Information Technology student in the University of the
-                    Cordilleras.</p>
+                <p>
+                    A second-year Bachelor of Science in Information
+                    Technology student at the University of the Cordilleras.
+                </p>
             </div>
 
             <div class="pfp">
-                <img src="/images/Some.jpg" alt="Profile picture">
+                <img src="/images/Me.png" alt="Profile Picture" srcset="">
             </div>
-
         </header>
+
+        <hr>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am an IT student interested in web development,
+                programming, and learning new technologies.
+                I enjoy improving my technical skills and exploring
+                different areas of information technology.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Git</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><h2><a href="3D.HTML">3D MODELS</h2></a>
+                <p>Checkout my 3d models!</p></li>
+                <li><h2><a href="Stituationship.html">Stituationship</h2></a>
+                <p>Check out my website about custom tailoring!</p></li>
+                <li><h2><a href="Game.html">Games</h2></a>
+                <p>Check out the games I made!</p></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: liamdanielcerna123@gmail.com</p>
+        </section>
+
     </div>
+    
+    <hr>
+    <footer>
+        &copy; Liam Daniel G. Cerna
+    </footer>
+
 </body>
 
 </html>
